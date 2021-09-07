@@ -1,8 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 def majuscule(mot):
-    # TODO completer la fonction ici
-    return mot
+    return "".join([chr(ord(x)-32) for x in mot])
 
 
 if __name__ == '__main__':
@@ -19,3 +18,4 @@ if __name__ == '__main__':
         mots[i] = majuscule(mots[i])
 
     print(mots)
+
