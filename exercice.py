@@ -1,7 +1,15 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 def majuscule(mot):
-    return "".join([chr(ord(x)-32) for x in mot])
+    nv_mot = ""
+    for lettre in mot:
+        ord_ = ord(lettre)
+        if 96<ord_<123:
+            nv_mot += chr(ord_-32)
+        else:
+            nv_mot += lettre
+    return nv_mot
+
 
 
 if __name__ == '__main__':
